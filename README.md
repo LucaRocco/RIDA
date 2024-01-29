@@ -1,4 +1,4 @@
-# RIDA - Remote Intrusion Detection System
+# RIDA - Remote Intrusion Detection Analyzer
 
 ## What is RIDA?
 
