@@ -26,3 +26,9 @@ The development of RIDA involves collaboration across multiple disciplines:
 - **System Development:** Primarily targeting Linux systems.
 - **Web Development:** Implementing a user-friendly UI to interact with the main node.
 - **Blockchain Knowledge:** Desired for enhancing the system's capabilities.
+
+## Cloud Native Approach
+
+When envisioning this tool, a crucial aspect is its cloud-native readiness, ensuring seamless integration with major cloud products such as Kubernetes and its derivatives. The preliminary concept involves a Kubernetes controller with the capability to scan running containers, identifying and addressing integrity issues.
+
+The idea is still in its early stages, and while contemplating its usefulness, I acknowledge the current lack of visibility into Kubernetes/container vulnerabilities. As my understanding of this topic evolves, I will promptly update this document to provide more insights.
