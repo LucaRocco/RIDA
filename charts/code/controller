@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant Administrator as Administrator
+    participant Controller as RIDA Controller
+    participant Broker as Message Broker
+
+    activate Administrator
+    activate Controller
+    activate Broker
+
+    Administrator->>Controller: Provide Configuration
+    loop for each interested message queue
+        Controller->>Broker: Distribute Configuration
+    end
+    Controller->>Administrator: async result
+
+    deactivate Administrator
+    deactivate Controller
+    deactivate Broker

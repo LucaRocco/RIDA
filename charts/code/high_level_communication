@@ -1,0 +1,32 @@
+stateDiagram-v2
+
+    EdgeOne: RIDA Edge 1
+    EdgeTwo: ...
+    EdgeThree: RIDA Edge N
+
+    HandlerOne: Notification Handler 1
+    HandlerTwo: ...
+    HandlerThree: Notification Handler N
+
+    Controller: RIDA Controller
+    
+    note left of Controller
+        The controller pushes the current
+         configuration to the edges
+    end note
+
+    note right of Edges
+        Each edge runs on a different host
+    end note
+
+    Controller --> Edges : Distribute configuration
+    state Edges {
+        [*] --> EdgeOne : configuration
+        EdgeOne --> HandlerOne : Notification
+        --
+        [*] --> EdgeTwo : configuration
+        EdgeTwo --> HandlerTwo : Notification
+        --
+        [*] --> EdgeThree : configuration
+        EdgeThree --> HandlerThree: Notification
+    }

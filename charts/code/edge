@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant Edge as RIDA Edge
+    participant Broker as Message Broker
+
+    activate Edge
+    activate Broker
+
+    Broker->>Edge: Read Configuration from queue
+    Edge->>Edge: Apply cofiguration
+
+    deactivate Edge
+    deactivate Broker
